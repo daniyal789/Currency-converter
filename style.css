@@ -34,12 +34,13 @@ form input{
 .dropdown{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 2rem;
 }
 .dropdown i{
     font-size:1.5rem ;
     margin-top: 1rem;
+    padding: 4px;
 }
 .select-container img{
     max-width: 2rem;
@@ -64,9 +65,23 @@ button{
     font-size: 1rem;
     cursor: pointer;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
     .container{
-        width:35vh;
+        width:32vh;
         margin: 2rem;
     }
 }
+@media screen and (max-height:450px) {
+    .container{
+        width:60vh;
+        margin: 2rem;
+    }
+    /* .dropdown{
+        width: 100px;
+        display: flex;
+        align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    }*/
+} 
